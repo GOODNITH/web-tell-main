@@ -42,7 +42,6 @@
                     <a href="#k" class="dropdown-item active">Apoyo Psicológico</a>
                     <a href="/estrategias/" class="dropdown-item">Estrategias de Manejo del Estrés</a>
                     <a href="/Tecnicasderelajacion/" class="dropdown-item">Técnicas de Relajación </a>
-                    <a href="hK" class="dropdown-item">Apoyo Académico </a>
                 </div>
             </div>
             <a href="/contacto/" class="nav-item nav-link">¡Contactanos!</a>
@@ -223,7 +222,7 @@
                 <a href="1"> Apoyo Psicológico</a>
                 <a href="/estrategias/"> Estrategias de Manejo del Estrés</a>
                 <a href="/Tecnicasderelajacion/"> Técnicas de Relajación</a>
-                <a href="1"> Apoyo Académico</a>
+
             </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-3">

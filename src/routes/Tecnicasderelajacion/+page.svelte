@@ -1,12 +1,19 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	// Importaciones CSS
+    import { onMount } from 'svelte';
+    // Importaciones CSS
 
-	import '$lib/css/style.css';
-	import '$lib/css/todo.css';
-	import '$lib/animate/animate.min.css';
-	import '$lib/lightbox/css/lightbox.min.css';
-	</script>
+    import '$lib/css/style.css';
+    import '$lib/css/todo.css';
+    import '$lib/animate/animate.min.css';
+    import '$lib/animate/animate.css';
+    import '$lib/lightbox/css/lightbox.min.css';
+    import mindfulness from '$lib/img/mindfuldness.png';
+    import relajacionprogresiva from '$lib/img/relajacion progresiva.png';
+    import respiraciondiafragmatica from '$lib/img/segun-esta-informacion-haz-una-imagen-con-tonos-mo.png';
+    import Meditacion from '$lib/img/meditacion guiada.png';
+
+    
+    </script>
 
 <!-- Spinner Start -->
 
@@ -23,7 +30,7 @@
 <div class="container-fluid p-0">
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
     <a href="/index/" class="navbar-brand p-0">
-        <h1 class="display-6 text-primary m-0"><img src="img/una-mariposa-de-lado.png" alt="Logo"
+        <h1 class="display-6 text-primary m-0"><img src="https://images.vexels.com/media/users/3/156854/isolated/preview/cf2b0cb67701d3c7ffbe6860cae9619a-icono-de-silueta-de-mariposa-monarca.png" alt="Logo"
            > You can tell me</h1>
 
     </a>
@@ -41,7 +48,7 @@
                     <a href="#k" class="dropdown-item active">Apoyo Psicológico</a>
                     <a href="/estrategias/" class="dropdown-item">Estrategias de Manejo del Estrés</a>
                     <a href="/Tecnicasderelajacion/" class="dropdown-item">Técnicas de Relajación </a>
-                    <a href="#k" class="dropdown-item">Apoyo Académico </a>
+
                 </div>
             </div>
             <a href="/contacto/" class="nav-item nav-link">Contactanos</a>
@@ -92,7 +99,7 @@
         <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
             <div class="blog-item">
                 <div class="blog-img">
-                    <img src="img/segun-esta-informacion-haz-una-imagen-con-tonos-mo.png"
+                    <img src={respiraciondiafragmatica}
                         class="img-fluid w-100" alt="Imagen respiración diafragmática">
                     <div class="blog-info">
                         <div class="d-flex">
@@ -116,7 +123,7 @@
         <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
             <div class="blog-item">
                 <div class="blog-img">
-                    <img src="img/relajacion progresiva.png" class="img-fluid w-100"
+                    <img src={relajacionprogresiva} class="img-fluid w-100"
                         alt="Imagen relajación progresiva Jacobson">
                     <div class="blog-info">
                         <div class="d-flex">
@@ -140,7 +147,7 @@
         <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
             <div class="blog-item">
                 <div class="blog-img">
-                    <img src="img/mindfuldness.png" class="img-fluid w-100" alt="Imagen mindfulness">
+                    <img src={mindfulness} class="img-fluid w-100" alt="Imagen mindfulness">
                     <div class="blog-info">
                         <div class="d-flex">
                             <span class="me-3"><i class=""></i></span>
@@ -163,7 +170,7 @@
         <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
             <div class="blog-item">
                 <div class="blog-img">
-                    <img src="img/meditacion guiada.png" class="img-fluid w-100" alt="Imagen meditación guiada">
+                    <img src={Meditacion} class="img-fluid w-100" alt="Imagen meditación guiada">
                     <div class="blog-info">
                         <div class="d-flex">
                             <span class="me-3"><i class=""></i></span>
@@ -222,7 +229,7 @@
                 <a href="1" aria-label="button"> Apoyo Psicológico</a>
                 <a href="/estrategias/"> Estrategias de Manejo del Estrés</a>
                 <a href="/Tecnicasderelajacion/"> Técnicas de Relajación</a>
-                <a href="1" aria-label="button"> Apoyo Académico</a>
+
             </div>
         </div>
         <div class="col-md-6 col-lg-6 col-xl-3">

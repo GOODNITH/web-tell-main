@@ -1,10 +1,6 @@
 <script>
 	// @ts-nocheck
 	import '$lib/css/inico.css';
-	import '$lib/css/style.css';
-	import '$lib/css/todo.css';
-	import '$lib/animate/animate.min.css';
-	import '$lib/lightbox/css/lightbox.min.css';
 	import img1 from '$lib/img/img1.jpg';
 	import img2 from '$lib/img/img2.jpg';
 	import img3 from '$lib/img/img3.jpg';
