@@ -1,5 +1,8 @@
 <script>
 import '$lib/css/style.css';
+	import '$lib/css/todo.css';
+	import '$lib/animate/animate.min.css';
+	import '$lib/lightbox/css/lightbox.min.css';
 </script>
 
 
@@ -32,22 +35,8 @@ import '$lib/css/style.css';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
   </svelte:head>
   
-  {#if showSpinner}
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-  {/if}
-  
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
-      <a href="/" class="navbar-brand p-0">
-        <h1 class="display-6 text-primary m-0">
-          <img src="/placeholder.svg?height=80&width=80" alt="Logo" style="width: 80px; height: auto;">
-          You can tell me
-        </h1>
-      </a>
       <button aria-label="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="fa fa-bars"></span>
       </button>
@@ -59,8 +48,8 @@ import '$lib/css/style.css';
             <a href="1" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
             <div class="dropdown-menu m-0">
               <a href="/apoyopsicologico" class="dropdown-item" class:active={activePage === 'apoyopsicologico'} on:click={() => activePage = 'apoyopsicologico'}>Apoyo Psicológico</a>
-              <a href="/estrategias-dmde" class="dropdown-item" class:active={activePage === 'estrategias-dmde'} on:click={() => activePage = 'estrategias-dmde'}>Estrategias de Manejo del Estrés</a>
-              <a href="/tecnicas-de-relajacion" class="dropdown-item" class:active={activePage === 'tecnicas-de-relajacion'} on:click={() => activePage = 'tecnicas-de-relajacion'}>Técnicas de Relajación</a>
+              <a href="/estrategias" class="dropdown-item" class:active={activePage === 'estrategias-dmde'} on:click={() => activePage = 'estrategias-dmde'}>Estrategias de Manejo del Estrés</a>
+              <a href="/tecnicasderelajacion" class="dropdown-item" class:active={activePage === 'tecnicas-de-relajacion'} on:click={() => activePage = 'tecnicas-de-relajacion'}>Técnicas de Relajación</a>
             </div>
           </div>
           <a href="/contact" class="nav-item nav-link" class:active={activePage === 'contact'} on:click={() => activePage = 'contact'}>¡Contáctanos!</a>
@@ -79,9 +68,9 @@ import '$lib/css/style.css';
       <div class="container text-center py-5" style="max-width: 900px;">
         <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Estrategias de manejo del estrés</h3>
         <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-          <li class="breadcrumb-item"><a href="/">Inicio</a></li>
-          <li class="breadcrumb-item"><a href="1">Páginas</a></li>
-          <li class="breadcrumb-item"><a href="1">Estrategias de manejo del estrés</a></li>
+          <li class="breadcrumb-item"><a href="#k">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="#k">Páginas</a></li>
+          <li class="breadcrumb-item"><a href="/estrategias/">Estrategias de manejo del estrés</a></li>
         </ol>
       </div>
     </div>

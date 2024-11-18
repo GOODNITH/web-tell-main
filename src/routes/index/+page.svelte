@@ -64,7 +64,7 @@
 						>Paginas</button
 					>
 					<div class="dropdown-menu m-0">
-						<a href="/sobrenosotras/" class="dropdown-item active">Sobre Nosotros</a>
+						<a href="/sobrenosotros/" class="dropdown-item active">Sobre Nosotros</a>
 						<a href="/estrategias/" class="dropdown-item">Estrategias de Manejo del Estrés</a
 						>
 						<a href="/Tecnicasderelajacion/" class="dropdown-item">Técnicas de Relajación </a>

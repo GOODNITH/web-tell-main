@@ -6,6 +6,8 @@
 	import '$lib/css/todo.css';
 	import '$lib/animate/animate.min.css';
 	import '$lib/lightbox/css/lightbox.min.css';
+    import about from '$lib/img/about-1.png';
+    import unacitaconpsicolog from '$lib/img/-una-cita-con-psicolog-a-.png';
 	</script>
 
 <svelte:head>
@@ -22,7 +24,7 @@
 <div class="container-fluid p-0">
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
     <a href="/index/" class="navbar-brand p-0">
-        <h1 class="display-6 text-primary m-0"><img src="img/una-mariposa-de-lado.png" alt="Logo"
+        <h1 class="display-6 text-primary m-0"><img src="https://images.vexels.com/media/users/3/156854/isolated/preview/cf2b0cb67701d3c7ffbe6860cae9619a-icono-de-silueta-de-mariposa-monarca.png" alt="Logo"
                 style="width: 80px; height: auto;">You can tell me</h1>
 
     </a>
@@ -82,7 +84,7 @@
     <div class="row g-5">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="RotateMoveLeft">
-                <img src="img/about-1.png" class="img-fluid w-100" alt="">
+                <img src="{about}" class="img-fluid w-100" alt="">
             </div>
         </div>
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -174,7 +176,7 @@
 <div class="row g-5 pt-5" style="margin-top: 6rem;">
     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
         <div class="feature-img RotateMoveLeft h-100" style="object-fit: cover;">
-            <img src="img/-una-cita-con-psicolog-a-.png" class="img-fluid w-100 h-100" alt="">
+            <img src="{unacitaconpsicolog}" class="img-fluid w-100 h-100" alt="">
         </div>
     </div>
     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
